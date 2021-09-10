@@ -1,0 +1,46 @@
+- 👋 Hi, I’m @Rahulk273  (Rahul kumar) 
+- 👀 I’m interested in ... coding,system design and web development.
+- 🌱 I’m currently learning ...DSA by (abdul bari sir)
+
+- 📫 How to reach me ... email: lionhunterp9cur80r2@gmail.com
+
+#include <iostream>
+using namespace std;
+
+int main() {                                    //  
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int l;
+	    cin>>l;
+	    string str;
+	    cin >> str;
+	    
+	    bool certain = false;
+	    
+	    for(int i=0; i<l; i++)
+	    {
+	        if(str[i]=='N')
+	            continue;
+	        else
+	        {
+	            certain = true;
+	            if(str[i]=='I')
+	            {
+	                cout<<"INDIAN"<<endl;
+	                break;
+	            }
+	            else if(str[i]=='Y')
+	            {
+	                cout<<"NOT INDIAN"<<endl;
+	                break;
+	            }
+	        }
+	    }
+	    if(!certain)
+	        cout<<"NOT SURE"<<endl;
+	}
+	return 0;
+}
